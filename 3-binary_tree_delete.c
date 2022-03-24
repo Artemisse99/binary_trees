@@ -9,11 +9,9 @@ void _deleteTree(binary_tree_t *tree)
 {
 if (tree == NULL) return;
  
-    /* first delete both subtrees */
 _deleteTree(tree->left);
 _deleteTree(tree->right);
  
-    /* then delete the node */
 free(tree);
 }
 /**
