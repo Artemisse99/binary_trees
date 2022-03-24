@@ -12,6 +12,7 @@ int binary_tree_is_leaf(const binary_tree_t *node)
 		return (1);
 	else
 		return (0);
+}
 /**
  * binary_tree_is_full - is a pointer to the root node
  * @tree:  is a pointer to the root node of the tree to check
