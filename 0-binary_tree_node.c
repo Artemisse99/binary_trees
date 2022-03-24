@@ -6,17 +6,19 @@
 * @value: value to store in the new node.
 * Return: pointer to the new node, or NULL on failure.
 */
+
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
-    binary_tree_t *node;
-    node = calloc(sizeof(binary_tree_t), 1);
+binary_tree_t *node;
 
-    if (!node)
-        return (NULL);
+node = calloc(sizeof(binary_tree_t), 1);
 
-    node->parent = parent;
-    node->left = NULL;
-    node->right = NULL;
-    node->n =  value;
-    return (node);
+if (!node)
+return (NULL);
+
+node->parent = parent;
+node->left = NULL;
+node->right = NULL;
+node->n =  value;
+return (node);
 }
